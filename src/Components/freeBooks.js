@@ -104,7 +104,7 @@ function FreeBooks() {
         <div className='container  max-w-screen-2xl dark:bg-slate-950 dark:text-white  md:px-14 py-5 px-14 pt-20'>
             <div className='space-y-5 mb-10'>
                 <h3 className='text-2xl text-center md:text-left'>Free Offered Courses</h3>
-                <p className='text-lg text-center md:text-left w-[70%]'>Learn valuable, practical skills from free online video courses. Explore tech essentials and keep pace with change. Become more focused and productive. Top it off with courses that round out your skills and enrich your day to day.</p>
+                <p className='text-lg text-center md:text-left md:w-[70%] w-[100%]'>Learn valuable, practical skills from free online video courses. Explore tech essentials and keep pace with change. Become more focused and productive. Top it off with courses that round out your skills and enrich your day to day.</p>
             </div>
         <div className=' mb-20'>
 
