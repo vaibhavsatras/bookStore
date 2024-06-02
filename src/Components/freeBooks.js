@@ -114,7 +114,7 @@ function FreeBooks() {
             Data.map((item,idx)=>{
 
                   return(
-                  <div key={idx}>
+                  <div>
                   <Cards item={item} viewBook={viewBook} />
                   </div>)
             })
