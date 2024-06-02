@@ -69,7 +69,7 @@ function FreeBooks() {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      initialSlide: 1,
+      initialSlide: 3,
       responsive: [
         {
           breakpoint: 1024,
@@ -92,7 +92,8 @@ function FreeBooks() {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         }
       ]
