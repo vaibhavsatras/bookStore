@@ -69,7 +69,7 @@ function FreeBooks() {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      initialSlide: 3,
+      initialSlide: 1,
       responsive: [
         {
           breakpoint: 1024,
