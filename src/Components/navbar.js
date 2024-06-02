@@ -146,7 +146,7 @@ function LogOut()
                 aria-label="close sidebar"
                 className="drawer-overlay "
               ></label>
-              <ul className="menu p-4 pt-6 w-44 min-h-full bg-base-200  text-base-content menu-sm btn-ghostx dark:bg-slate-800 dark:text-white">
+              <ul className="menu p-4 pt-6 w-44 min-h-full bg-base-200  menu-lg  btn-ghostx dark:bg-slate-800 dark:text-white">
       
                 {menuList}
               </ul>

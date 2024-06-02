@@ -39,20 +39,20 @@ function Contact() {
   return (
     <>
             <div>
-                <div className="w-[40%] mx-auto mt-11">
+                <div className="md:w-[40%] w-[100%] mx-4 md:mx-auto mt-11">
                     <div className="">
                     <div className="modal-box">
                         <form method="dialog">
                         <Link to={'/'} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mx-4 mt-5 text-lg">✕</Link>
                         </form>
                         <div className='mx-4 my-2'>
-                        <h3 className="font-bold text-xl mb-5">Contact Us</h3>
+                        <h3 className="font-bold md:text-xl text-lg  mb-5">Contact Us</h3>
 
                         <form onSubmit={handleSubmit(SubmitOn)} >
 
-                            <div className='mt-1 space-y-1 '>
+                            <div className='mt-4 md:mt-5 space-y-1 '>
                                 <label htmlFor="name" className='block'>Name</label>
-                                <input type="text" className='outline-none border-2 px-6 py-1.5 rounded-lg w-[70%]'
+                                <input type="text" className='outline-none border-2 px-6 py-1.5 rounded-lg md:w-[70%] w-[100%]'
                                  placeholder='Enter The Name' name='name'
                                  
                                  {...register('name',{
@@ -70,9 +70,9 @@ function Contact() {
                             }
 
 
-                            <div className='mt-5  space-y-1 '>
+                            <div className='mt-4 md:mt-5  space-y-1 '>
                                 <label htmlFor="email" className='block'>Email</label>
-                                <input type="email" className='outline-none border-2 px-6 py-1.5 rounded-lg w-[70%]'
+                                <input type="email" className='outline-none border-2 px-6 py-1.5 rounded-lg md:w-[70%] w-[100%]'
                                  placeholder='Enter The Email' name='name'
                                  
                                  {...register('email',{
@@ -89,10 +89,10 @@ function Contact() {
                                 errors.email && (<small className='text-red-600'>{errors.email.message}</small>)
                             }
 
-                            <div className='mt-5 space-y-1'>
+                            <div className='mt-4 md:mt-5 space-y-1'>
                                 <label htmlFor="message" className='block'>Message</label>
                                 <textarea name="text" className='outline-none border-2 px-6 py-1.5 rounded-lg 
-                                w-[70%] resize-none' placeholder='Enter The Message'
+                                md:w-[70%] w-[100%] resize-none' placeholder='Enter The Message'
                                 
                                 {...register('message',{
                                     required: 'Please Enter The Messsage',
@@ -110,7 +110,7 @@ function Contact() {
 
 
                             <div className='mt-5 space-y-3'>
-                                <button className='bg-blue-600 text-white hover:bg-blue-500 px-4  py-2 w-[50%] rounded-3xl '>Submit</button>
+                                <button className='bg-blue-600 text-white hover:bg-blue-500 px-4  py-2 md:w-[50%] w-[75%] rounded-3xl '>Submit</button>
                             </div>
 
                         </form>

@@ -55,13 +55,13 @@ function SignUp() {
 
   return (
     <>
-            <div  className="w-[40%] mx-auto mt-24">
+            <div  className="md:w-[40%] w-[100%] mx-4 md:mx-auto mt-10 md:mt-24">
             <div className="modal-box">
               <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mx-4 my-4 text-lg" onClick={goPage}>✕</button>
               </form>
               <div className='space-y-5 mx-4 my-2 '>
-                    <h3 className="font-bold text-xl">Sign Up</h3>
+                    <h3 className="font-bold text-lg md:text-xl">Sign Up</h3>
                 <form onSubmit={handleSubmit(submitData)}>
                     <div className='space-y-1 '>
                         <label htmlFor="name" className='block'>Name</label>
@@ -88,7 +88,7 @@ function SignUp() {
                     }
                 
 
-                    <div className='space-y-1 mt-2 '>
+                    <div className='space-y-1  md:mt-2 mt-3 '>
                         <label htmlFor="email" className='block'>Email</label>
                         <input type="email" name='email' placeholder='Enter The Email' 
                         className={classNames('border-2 px-2 py-1 rounded-lg w-[100%] md:w-[70%] outline-none',{
@@ -113,7 +113,7 @@ function SignUp() {
                     }
     
 
-                    <div className='space-y-1  mt-2'>
+                    <div className='space-y-1  md:mt-2 mt-3'>
                         <label htmlFor="password" className='block'>Password</label>
                         <input type="password" name='password' placeholder='Enter The Password' 
                         className={classNames('border-2 px-2 py-1 rounded-lg w-[100%] md:w-[70%] outline-none',{
@@ -138,12 +138,12 @@ function SignUp() {
                         
                     }
 
-                    <div className='flex justify-between items-center pt-2 mt-2 mb-3'>
+                    <div className='flex justify-between  gap-6 md:gap-0 items-center pt-2 md:mt-2 mt-3 mb-3'>
                         <button className='border hover:bg-pink-600 border-pink-700 px-4 py-1 rounded-lg
                          bg-pink-700 text-white' type='submit'>Submit</button>
-                        <div className='space-x-2'>
-                        <span>have a Signup?</span>
-                        <button className='text-blue-700 cursor-pointer underline text-lg' 
+                        <div className='space-x-2  flex justify-center items-center'>
+                        <span className='text-[14px] md:text-lg'>have a Signup?</span>
+                        <button className='text-blue-700 cursor-pointer underline text-[14px] md:text-lg' 
                         onClick={()=>document.getElementById('my_modal_3').showModal()}>Sign In</button>
                         </div>
                         <Login/>
