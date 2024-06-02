@@ -67,9 +67,9 @@ function FreeBooks() {
       dots: true,
       infinite: false,
       speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      initialSlide: 1,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
       responsive: [
         {
           breakpoint: 1024,
@@ -81,19 +81,18 @@ function FreeBooks() {
           }
         },
         {
-          breakpoint: 640,
+          breakpoint: 660,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            initialSlide: 3
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 3
+            slidesToScroll: 1
           }
         }
       ]
@@ -107,7 +106,7 @@ function FreeBooks() {
                 <h3 className='text-2xl text-center md:text-left'>Free Offered Courses</h3>
                 <p className='text-lg text-center md:text-left md:w-[70%] w-[100%]'>Learn valuable, practical skills from free online video courses. Explore tech essentials and keep pace with change. Become more focused and productive. Top it off with courses that round out your skills and enrich your day to day.</p>
             </div>
-        <div className=' mb-20'>
+        <div className=' mb-20 slide-container'>
 
         <Slider {...settings}>
         
